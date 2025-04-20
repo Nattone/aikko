@@ -1,0 +1,20 @@
+<div class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            {{#each items as |item|}}
+                {{#if item.link}}
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a class="breadcrumbs__item__link" href="{{item.link}}" title="Главная" itemprop="item">
+                            <span itemprop="name">{{item.title}}</span>
+                            <meta itemprop="position" content="{{item.meta}}">
+                        </a>
+                    </li>
+                    {{else}}
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <span itemprop="name">{{item.title}}</span>
+                    </li>
+                {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+</div>

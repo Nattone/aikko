@@ -1,0 +1,21 @@
+<div class="video video_play {{videoClass}}">
+    <div class="video__block">
+        <div class="video__overlay">
+            <img src="img/content/test.jpg" alt="video__cover" class="video__cover">
+
+            <button class="btn video__btn">
+                <img src="img/icons/icon-play2.svg" alt="">
+            </button>
+
+        </div>
+
+        <!-- YOUTUBE -->
+        <iframe class="video__clip video_iframe" src="https://www.youtube.com/embed/AIGnRc7F86Q" title="YouTube video player"
+            allow="accelerometer; frameborder=0; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+             allowfullscreen></iframe>
+
+        <!-- OR VK -->
+        <!-- с админки будут прихожить вот так https://vk.com/video-126808198_456239282. первые цифры вытащить и вставить в scr после oid=-КОД , а вторые цифры вставить после id=КОД. Пример ниже -->
+        {{!-- <iframe class="video__clip video_iframe" title="Vk video player" src="https://vk.com/video_ext.php?oid=-126808198&id=456239282&hd=1" allow="autoplay; encrypted-media; fullscreen; gyroscope; clipboard-write; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe> --}}
+    </div>
+</div>

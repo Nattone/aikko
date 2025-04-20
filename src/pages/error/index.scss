@@ -1,0 +1,61 @@
+@use '~/styles/colors';
+
+.error {
+  .header._desktop {
+    box-shadow: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 0 !important;
+    padding: 120px 0;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      padding: 84px 0 120px;
+    }
+
+    .container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    color: rgba(colors.$grey600, 0.2);
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 24px;
+
+    @media (max-width: 991px) {
+      font-size: 80px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 60px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 40px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    color: colors.$grey600;
+    margin-bottom: 24px;
+    max-width: 490px;
+  }
+}

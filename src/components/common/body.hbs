@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+{{> html/_head title=title}}
+
+<body class="{{class}}" {{#if dataUrl}}data-url="{{dataUrl}}" {{/if}} itemscope itemtype="http://schema.org/Organization">
+    {{> common/icons }}
+
+    {{> @partial-block }}
+
+    {{> popup/cookie }}
+    {{> popup/media }}
+    {{> popup/question }}
+    {{> popup/success }}
+</body>
+
+</html>

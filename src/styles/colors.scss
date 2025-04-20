@@ -1,0 +1,26 @@
+$purple: #50398c;
+$orange: #e99500;
+$pink: #df3577;
+$blue: #0097b9;
+$grey900: #2d2c34;
+$grey600: #656566;
+$grey300: #93999f;
+$grey200: #c3c3c3;
+$grey100: #f8f7fb;
+$grey-bg: #f2effa;
+$white: #fff;
+$red: #e54338;
+$yellow: #efb55f;
+$green: #40bd88;
+$skiey: #64aac8;
+
+// background-image: linear-gradient(128deg, #df2976 9.53%, #f466a2 134.41%);
+// background-image: linear-gradient(180deg, #45307b 0%, #7e6cec 100%);
+
+// на страницах использовать только цвета, которые заведены в ui kit,
+// если где то попался серый, которого нет в ui kit использовать ближайший
+// к нему из ui kit, либо написать дизайнеру
+
+// #d5dde5 на макете - rgba(colors.$grey300, .3)
+// #f1f0f3 на макете - rgba(colors.$grey200, .2)
+// #ececec на макете - rgba(colors.$grey200, .3)

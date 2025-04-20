@@ -1,0 +1,63 @@
+<div id="entity" class="popup popup_entity">
+    <div class="popup__wrapper">
+        <div class="popup__scroll">
+            <div class="popup__close-area"></div>
+            <div class="popup__block">
+                <button class="popup__close">
+                    <svg class="icon">
+                        <use xlink:href="#icon-close"></use>
+                    </svg>
+                </button>
+                <form class="form form_entity" id="form_entity" action="mocks/_form-success.json" method="POST">
+                    <input type="hidden" name="type" value="form_entity">
+                    <h4 class="form__title title_4">Записаться</h4>
+                    <div class="form__wrapper">
+                        <label class="form__label form__label_name">
+                            <span class="form__label__name bodytext_s">Ваше ФИО</span>
+                            <input class="form__input fio-mask" size="40" name="name" type="text" placeholder="Иванов Иван Иванович" required>
+                        </label>
+
+                        <label class="form__label form__label_email _error">
+                            <span class="form__label__name bodytext_s">Ваш Email</span>
+                            <input class="form__input" size="40" name="email" type="email" placeholder="pochta@pochta.ru" required>
+                            <span class="form__label__error bodytext_s">Текст ошибки</span>
+                        </label>
+
+                        <label class="form__label form__label_phone _successful">
+                            <span class="form__label__name bodytext_s">Ваш номер</span>
+                            <input class="form__input phone-mask" size="20" name="phone" type="text" placeholder="+7 (___) ___ - __- __" required>
+                        </label>
+
+                        <fieldset class="radio radio_requisites">
+                            <label>
+                                <input type="radio" name="type" id="individual" value="0" class="radio__real" checked>
+                                <span class="radio__custom"></span>
+                                <span class="radio__text bodytext_s">Физическое лицо</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="type" id="legal" value="1" class="radio__real">
+                                <span class="radio__custom"></span>
+                                <span class="radio__text bodytext_s">Юридическое лицо</span>
+                            </label>
+                        
+                            <label class="form__label form__label_requisites">
+                                <span class="form__label__name bodytext_s">Реквизиты организации</span>
+                                <textarea class="form__input form__textarea" name="text" cols="30" rows="10" placeholder="Вставьте сюда реквизиты Вашей организацией"></textarea>
+                            </label>
+                        </fieldset>
+
+                          <label class="form__label form__label_checkbox">
+                            <input type="checkbox" name="titles" class="checkbox_real" required>
+                            <span class="checkbox_custom"></span>
+                            <span class="form__label__name bodytext_s">Заполняя поля данной формы, я соглашаюсь с <a href="#" class="form__link">политикой конфиденциальности</a></span>
+                        </label>
+
+                        <input type="hidden" name="g-recaptcha-code" />
+                        
+                        <button type="submit" class="form__btn btn btn_square btn_primary">Записаться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

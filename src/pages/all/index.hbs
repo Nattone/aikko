@@ -1,0 +1,75 @@
+{{#> common/body
+title=pages.all.pageTitle
+class="all page"
+
+}}
+
+{{> layout/header}}
+
+<main class="main">
+    <div class="container">
+        <h2>Список всех страниц</h2>
+        <br>
+        <ol class="all__list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="centers.html">Детские центры</a></li>
+            <li><a href="centers-catalog.html">ДЦ Каталог программ</a></li>
+            <li><a href="centers-subcatalog.html">ДЦ Каталог программ 2й уровень</a></li>
+            <li><a href="program.html">Программа</a></li>
+            <li><a href="branches.html">Филиалы</a></li>
+            <li><a href="branch-detail.html">Филиал деталка</a></li>
+            <li><a href="schools.html">Школы</a></li>
+            <li><a href="school-detail.html">Школа деталка</a></li>
+            <li><a href="studios.html">Студии и секции</a></li>
+            <li><a href="studio-detail.html">Студии деталка</a></li>
+            <li><a href="traditions.html">Проекты и традиции</a></li>
+            <li><a href="admission.html">Поступление</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="project.html">Проект деталка</a></li>
+            <li><a href="about.html">О центре</a></li>
+            <li><a href="vacancies.html">Вакансии</a></li>
+            <li><a href="education.html">Обучение и тренинги</a></li>
+            <li><a href="career.html">Карьера</a></li>
+            <li><a href="for-partners.html">Партнёрам</a></li>
+            <li><a href="blog.html">Наша жизнь</a></li>
+            <li><a href="blog-detail.html">Наша жизнь деталка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="information.html">Сведения об образовательной организации</a></li>
+            <li><a href="template.html">Шаблонная стр / Документ деталка</a></li>
+            <li><a href="test.html">Тестовая стр</a></li>
+            <li><a href="confidentiality.html">Политика конфиденциальности</a></li>
+            <li><a href="error.html">404</a></li>
+            <li><a href="business.html">Бизнес руководителям</a></li>
+            <li><a href="details.html">Детальная страница мероприятия</a></li>
+        </ol>
+        <br>
+        <br>
+        <br>
+        <h2>Список всех повторяющихся блоков:</h2>
+    </div>
+
+    {{> block-cta/left dataPopup="excursion" }}
+    {{> block-cta/right dataPopup="internship" }}
+    {{> block-cta/with-image }}
+    {{> block-gallery/index }}
+    {{> block-slider/index sliderPopupData="excursion" }}
+
+    <style>
+        .all__list {
+            padding-left: 60px;
+        }
+        .all__list a,
+        .all__list li {
+            font-size: 30px;
+        }
+
+        .hightlight {
+            background-color: greenyellow;
+        }
+        .bugs {
+            background-color: yellow;
+        }
+    </style>
+
+    {{> layout/footer}}
+    {{/common/body}}

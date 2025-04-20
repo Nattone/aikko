@@ -1,0 +1,56 @@
+{
+  "name": "Секция",
+  "slug": "sekciya",
+  "schedules": [
+    {
+      "school_schedule_section": {
+        "number": "Расписание секции",
+        "school_app_sectionschedule_day": [
+          {
+            "day": "Пн",
+            "is_day_off": null,
+            "school_app_sectionschedule_item": [
+              {
+                "name": "Занятие секции",
+                "time_start": "17:51",
+                "time_end": "17:58"
+              }
+            ]
+          },
+          {
+            "day": "Вт",
+            "is_day_off": null,
+            "school_app_sectionschedule_item": [
+              {
+                "name": "Занятие секции",
+                "time_start": "17:50",
+                "time_end": ""
+              }
+            ]
+          },
+          {
+            "day": "Ср",
+            "is_day_off": true,
+            "school_app_sectionschedule_item": null
+          },
+          {
+            "day": "Чт",
+            "is_day_off": null,
+            "school_app_sectionschedule_item": [
+              {
+                "name": "Занятие секции",
+                "time_start": "",
+                "time_end": "17:59"
+              },
+              {
+                "name": "Занятие секции2",
+                "time_start": "",
+                "time_end": ""
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

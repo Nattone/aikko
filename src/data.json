@@ -1,0 +1,10 @@
+{
+  "common": {
+    "header": {}
+  },
+  "pages": {
+    "main-page": {
+      "pageTitle": "Aikko"
+    }
+  }
+}

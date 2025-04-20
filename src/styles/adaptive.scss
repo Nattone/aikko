@@ -1,0 +1,29 @@
+// Adaptive
+$desktop-width: 1280px;
+$sm-desktop-width: 1024px;
+$table-width: 768px;
+$sm-table-width: 640px;
+$phone-width: 480px;
+$sm-phone-width: 320px;
+
+// adaptive - актуальные размеры
+
+// @media (max-width: 1800px) {}
+// @media (max-width: 1600px) {}
+// @media (max-width: 1440px) {}
+// @media (max-width: 1280px) {}
+// @media (max-width: 1199px) {}
+// @media (max-width: 991px) {}
+// @media (max-width: 800px) {}
+// @media (max-width: 768px) {}
+// @media (max-width: 600px) {}
+// @media (max-width: 480px) {}
+// @media (max-width: 320px) {}
+
+// отступы между секциями - 120px добавляются по 60 сверху и снизу
+// прописываются у каждой секции индивидуально, т.к. для некоторых через margin, для остальных padding
+// брейкпоинты:
+// 1600 60/60
+// 768 30/30
+
+// внутренние паддинги у секций меняются на 991, 768, 480

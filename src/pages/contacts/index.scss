@@ -1,0 +1,23 @@
+@use '~/styles/colors';
+
+.contacts {
+  .header._desktop {
+    box-shadow: none;
+  }
+
+  .header {
+    @media (min-width: 1200px) {
+      box-shadow: none;
+    }
+  }
+
+  .map {
+    @media (min-width: 769px) {
+      padding: 8px 0 40px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 2px 0 10px;
+    }
+  }
+}

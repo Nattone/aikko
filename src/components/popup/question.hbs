@@ -1,0 +1,44 @@
+<div id="question" class="popup popup_question">
+    <div class="popup__wrapper">
+        <div class="popup__scroll">
+            <div class="popup__close-area"></div>
+            <div class="popup__block">
+                <button class="popup__close">
+                    <svg class="icon">
+                        <use xlink:href="#icon-close"></use>
+                    </svg>
+                </button>
+                <form class="form form_question" id="form_question" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                    <h4 class="form__title title_4">Задать вопрос</h4>
+                    <div class="form__wrapper">
+                        <label class="form__label form__label_name">
+                            <span class="form__label__name bodytext_s">Ваше ФИО</span>
+                            <input class="form__input fio-mask" size="40" name="name" type="text" placeholder="Иванов Иван Иванович" required>
+                        </label>
+
+                        <label class="form__label form__label_email _error">
+                            <span class="form__label__name bodytext_s">Ваш Email</span>
+                            <input class="form__input" size="40" name="email" type="email"placeholder="pochta@pochta.ru" required>
+                            <span class="form__label__error bodytext_s">Текст ошибки</span>
+                        </label>
+
+                        <label class="form__label">
+                            <span class="form__label__name bodytext_s">Ваше сообщение</span>
+                            <textarea class="form__input form__textarea" name="text" cols="30" rows="10" placeholder="Напишите Ваше сообщение"></textarea>
+                        </label>
+
+                        <label class="form__label form__label_checkbox">
+                            <input type="checkbox" name="titles" class="checkbox_real" required>
+                            <span class="checkbox_custom"></span>
+                            <span class="form__label__name bodytext_s">Заполняя поля данной формы, я соглашаюсь с <a href="#" class="form__link">политикой конфиденциальности</a></span>
+                        </label>
+
+                        <input type="hidden" name="g-recaptcha-code" />
+
+                        <button type="submit" class="form__btn btn btn_square btn_primary">Заказать звонок</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

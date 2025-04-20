@@ -1,0 +1,59 @@
+<header class="header _desktop">
+    <div class="container">
+        <div class="header__top">
+            <a class="header__logo logo" href="all.html" itemprop="url">
+                <img src="img/logo.svg" alt="" class="header__logo__image">
+                <meta itemprop="name" content="Умка">
+                <p class="header__logo__text">Школа в мире <br>От года до совершеннолетия</p>
+            </a>
+            <div class="header__top__menu">
+                {{> menu/top menuClass="_desktop"}}
+            </div>
+
+        </div>
+        <div class="header__bottom">
+            {{> menu/main menuClass="_desktop" }}
+
+            <div class="header__control">
+                <button class="btn btn_square btn_secondary _open-popup" data-target-id="request">Заказать звонок</button>
+                <button class="btn header__bvi bvi-open">
+                    <svg class="icon ">
+                        <use xlink:href="#icon-eyes"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<header class="header _adaptive">
+    <div class="container">
+        <div class="header__top">
+            <a class="header__logo logo" href="all.html" itemprop="url">
+                <img src="img/logo.svg" alt="" class="header__logo__image header__logo__image_big">
+                <img src="img/logo_s.svg" alt="" class="header__logo__image header__logo__image_small">
+                <p class="header__logo__text">Школа в мире<br>От года до совершеннолетия</p>
+            </a>
+            <div class="header__top__menu">
+                <button class="btn header__top__menu__btn _open-menu">
+                    <span class="line"></span>
+                </button>
+
+                <div class="header__top__menu__wrapper">
+                    {{> menu/top menuClass="_adaptive" }}
+                    {{> menu/main menuClass="_adaptive" }}
+
+                    <div class="header__control">
+                        <button class="btn btn_square btn_secondary _open-popup" data-target-id="request">Заказать звонок</button>
+                        <button class="btn header__bvi bvi-open">
+                            <svg class="icon ">
+                                <use xlink:href="#icon-eyes"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>

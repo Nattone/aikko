@@ -1,0 +1,26 @@
+{{#> common/body
+title=pages.error.pageTitle
+class="error page"
+}}
+
+{{> layout/header}}
+
+<main class="main">
+
+    <div class="container">
+        {{> menu/bottom menuClass="_desktop" }}
+    </div>
+
+    <section class="error__wrapper">
+        <div class="container">
+            <h1 class="error__title">Ошибка 404</h1>
+            <h3 class="error__subtitle title_3">УПС... Такой страницы не найдено. </h3>
+            <p class="error__text subtitle">Она была переименована или удалена. Вернитесь на главную.</p>
+            <a href="#" class="btn btn_square btn_primary">На главную</a>
+        </div>
+    </section>
+
+</main>
+
+{{> layout/footer}}
+{{/common/body}}
