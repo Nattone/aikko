@@ -14,13 +14,9 @@ $yellow: #efb55f;
 $green: #40bd88;
 $skiey: #64aac8;
 
-// background-image: linear-gradient(128deg, #df2976 9.53%, #f466a2 134.41%);
-// background-image: linear-gradient(180deg, #45307b 0%, #7e6cec 100%);
+// тёмная тема
 
-// на страницах использовать только цвета, которые заведены в ui kit,
-// если где то попался серый, которого нет в ui kit использовать ближайший
-// к нему из ui kit, либо написать дизайнеру
-
-// #d5dde5 на макете - rgba(colors.$grey300, .3)
-// #f1f0f3 на макете - rgba(colors.$grey200, .2)
-// #ececec на макете - rgba(colors.$grey200, .3)
+$black: #070707;
+$dark-bg: #121212;
+$dark-grey: #b1b1b1;
+$white: #fff;

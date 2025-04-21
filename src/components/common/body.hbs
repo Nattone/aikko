@@ -2,15 +2,15 @@
 <html lang="ru">
 {{> html/_head title=title}}
 
-<body class="{{class}}" {{#if dataUrl}}data-url="{{dataUrl}}" {{/if}} itemscope itemtype="http://schema.org/Organization">
+<body class="{{class}}" {{#if dataUrl}}data-url="{{dataUrl}}" {{/if}}>
     {{> common/icons }}
 
     {{> @partial-block }}
 
-    {{> popup/cookie }}
+    {{!-- {{> popup/cookie }}
     {{> popup/media }}
     {{> popup/question }}
-    {{> popup/success }}
+    {{> popup/success }} --}}
 </body>
 
 </html>
