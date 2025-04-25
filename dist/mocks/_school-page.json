@@ -1,0 +1,147 @@
+{
+  "name": "Начальная школа",
+  "slug": "nachalnaya-shkola",
+  "schedules": [
+      {
+          "school_schedule_program": {
+              "number": "1",
+              "school_app_schedule_day": [
+                  {
+                      "day": "Пн",
+                      "is_day_off": false,
+                      "school_app_schedule_item": [
+                          {
+                              "name": "Китайский язык",
+                              "time_start": "08:00",
+                              "time_end": "08:45"
+                          },
+                          {
+                              "name": "Математика",
+                              "time_start": "08:50",
+                              "time_end": "09:35"
+                          }
+                      ]
+                  },
+                  {
+                      "day": "Вт",
+                      "is_day_off": false,
+                      "school_app_schedule_item": null
+                  },
+                  {
+                      "day": "Ср",
+                      "is_day_off": false,
+                      "school_app_schedule_item": null
+                  },
+                  {
+                      "day": "Чт",
+                      "is_day_off": false,
+                      "school_app_schedule_item": null
+                  },
+                  {
+                      "day": "Пт",
+                      "is_day_off": false,
+                      "school_app_schedule_item": null
+                  },
+                  {
+                      "day": "Сб",
+                      "is_day_off": true,
+                      "school_app_schedule_item": null
+                  },
+                  {
+                      "day": "Вс",
+                      "is_day_off": true,
+                      "school_app_schedule_item": null
+                  }
+              ]
+          }
+      },
+      {
+          "school_schedule_program": {
+              "number": "2",
+              "school_app_schedule_day": [
+                  {
+                      "day": "Ср",
+                      "is_day_off": false,
+                      "school_app_schedule_item": [
+                          {
+                              "name": "Xandra Sanders",
+                              "time_start": "11:22",
+                              "time_end": "11:22"
+                          }
+                      ]
+                  },
+                  {
+                      "day": "Чт",
+                      "is_day_off": false,
+                      "school_app_schedule_item": [
+                          {
+                              "name": "занятие по поеданию мармеладных мишек",
+                              "time_start": "11:00",
+                              "time_end": "11:05"
+                          }
+                      ]
+                  }
+              ]
+          }
+      },
+      {
+          "school_schedule_program": {
+              "number": "10",
+              "school_app_schedule_day": null
+          }
+      }
+  ],
+  "price_directions": [
+      {
+          "price_direction": {
+              "name": "Детский сад",
+              "col_one": null,
+              "col_two": null,
+              "contact_app_price_direction_onecol": [
+                  {
+                      "name": "Абонемент полдня (до 13.00)",
+                      "price": "27000 руб./месяц"
+                  },
+                  {
+                      "name": "Абонемент полный день",
+                      "price": "37000 руб./месяц"
+                  },
+                  {
+                      "name": "Пребывание ребенка после 13:00 (продленка)",
+                      "price": "700 руб./день"
+                  }
+              ],
+              "contact_app_price_direction_twocol": null
+          }
+      },
+      {
+        "price_direction": {
+          "name": "Направление 1",
+          "col_one": null,
+          "col_two": null,
+          "contact_app_price_direction_onecol": [
+            {
+              "name": "Стоимость за месяц:",
+              "price": "25000"
+            }
+          ],
+          "contact_app_price_direction_twocol": null
+        }
+      },
+      {
+        "price_direction": {
+          "name": "Направление 2",
+          "col_one": "Колонка 1",
+          "col_two": "Колонка 2",
+          "contact_app_price_direction_onecol": null,
+          "contact_app_price_direction_twocol": [
+            {
+              "name": "Индивидуальное занятие (60 мин)",
+              "price_one": "15000",
+              "price_two": "20000"
+            }
+          ]
+        }
+      }
+  ]
+}
