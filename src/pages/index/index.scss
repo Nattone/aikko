@@ -49,32 +49,33 @@
   .tickets {
     &__list {
       display: flex;
+      flex-wrap: wrap;
+      margin: 0 -12px -24px;
     }
 
     &__item {
       background-color: rgba(colors.$black, 0.3);
       border: 1px solid colors.$white;
       border-radius: 10px;
-      max-width: 33.3%;
+      margin: 0 12px 24px;
+      max-width: calc(33.3% - 24px);
       overflow: hidden;
       padding: 28px;
 
       &__head {
         display: flex;
-        margin-bottom: 36px;
+        margin-bottom: 24px;
       }
 
       &__city {
         -webkit-box-orient: vertical;
         color: colors.$white;
-        display: box;
         /* stylelint-disable-next-line value-no-vendor-prefix */
         display: -webkit-box;
         font-size: 40px;
         font-weight: 600;
         -webkit-line-clamp: 2;
-        line-clamp: 2;
-        line-height: 1.15;
+        line-height: 1;
         overflow: hidden;
         text-overflow: ellipsis;
         text-transform: uppercase;
@@ -103,13 +104,24 @@
 
       &__wrapper {
         display: flex;
+        gap: 32px;
+        margin-bottom: 24px;
       }
 
       &__title {
         color: colors.$dark-grey;
         font-size: 18px;
         font-weight: 100;
+        line-height: normal;
+        margin-bottom: 4px;
         text-transform: lowercase;
+      }
+
+      &__value {
+        color: colors.$white;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: normal;
       }
     }
   }

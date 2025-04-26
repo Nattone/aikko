@@ -41,48 +41,12 @@ class="main-page page"
         <div class="container">
             <h2 class="tickets__title title_2">Тур 2025</h2>
             <div class="tickets__list">
-                <div class="tickets__item">
-                    <div class="tickets__item__head">
-                        <p class="tickets__item__city">Петропавловск Камчатский</p>
-                        <a href="#" class="tickets__item__vk">
-                            <svg class="icon icon_vk">
-                                <use xlink:href="#icon-vk"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="tickets__item__body">
-                        <div class="tickets__item__wrapper">
-                            <div class="tickets__item__amount">
-                                <p class="tickets__item__title">Осталось билетов</p>
-                                <p class="tickets__item__value">120</p>
-                            </div>
-                            <div class="tickets__item__guests">
-                                <p class="tickets__item__title">Приглашенные исполнители</p>
-                                <p class="tickets__item__value">Inspace, Playingtheangel</p>
-                            </div>
-                        </div>
-                        <div class="tickets__item__wrapper">
-                            <div class="tickets__item__date">
-                                <p class="tickets__item__title">Дата</p>
-                                <p class="tickets__item__value">19.05.2025</p>
-                            </div>
-                            <div class="tickets__item__price">
-                                <p class="tickets__item__title">Стоимость</p>
-                                <p class="tickets__item__value">2000 ₽</p>
-                            </div>
-                            <div class="tickets__item__place">
-                                <p class="tickets__item__title">Место</p>
-                                <p class="tickets__item__value">Эрмитаж</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="btn">
-                        <span class="btn__text">Купить билет</span>
-                        <svg class="btn__icon icon">
-                            <use xlink:href="#icon-arrow"></use>
-                        </svg>
-                    </a>
-                </div>
+                {{> tickets/card }}
+                {{> tickets/card }}
+                {{> tickets/card }}
+                {{> tickets/card }}
+
+
             </div>
         </div>
     </section>
