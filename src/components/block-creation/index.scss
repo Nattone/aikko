@@ -1,0 +1,72 @@
+@use '~/styles/colors';
+
+.creation {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__social,
+  &__music {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    &__item {
+      border: 1px solid colors.$white;
+      border-radius: 10px;
+      display: flex;
+    }
+
+    &__icon {
+      height: 50px;
+      stroke: colors.$white;
+      transition: all 0.3s ease;
+      width: 50px;
+    }
+  }
+
+  &__social {
+    width: 17%;
+
+    &__item {
+      align-items: center;
+      justify-content: center;
+      width: 109px;
+
+      &:hover {
+        .icon {
+          fill: colors.$white;
+          stroke: colors.$black;
+        }
+      }
+    }
+  }
+
+  &__music {
+    width: 75%;
+
+    &__item {
+      max-width: calc(33.3% - 16px);
+      padding: 12px;
+      width: 100%;
+    }
+
+    &__icon {
+      border-radius: 10px;
+      filter: grayscale(100%);
+      margin-right: 16px;
+      overflow: hidden;
+    }
+
+    &__title {
+      color: colors.$dark-grey;
+      margin-bottom: 4px;
+    }
+
+    &__value {
+      color: colors.$white;
+    }
+  }
+}
