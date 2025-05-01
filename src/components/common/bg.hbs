@@ -1,0 +1,83 @@
+<!-- SVG-фильтр шума -->
+<svg style="display: none;">
+    <filter id="noiseFilter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="3" stitchTiles="stitch" />
+    </filter>
+</svg>
+
+<!-- Canvas для динамического шума -->
+<canvas id="noiseCanvas"></canvas>
+
+<script>
+    const canvas = document.getElementById('noiseCanvas');
+    const ctx = canvas.getContext('2d');
+
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        generateNoise(); // Перегенерировать шум при ресайзе
+    }
+
+    function generateNoise() {
+        const w = canvas.width;
+        const h = canvas.height;
+        const imageData = ctx.createImageData(w, h);
+        const data = imageData.data;
+        const grainSize = 3; // Размер "зерна" (в пикселях)
+
+        for (let y = 0; y < h; y += grainSize) {
+            for (let x = 0; x < w; x += grainSize) {
+                const value = Math.random() * 255;
+                // Закрашиваем блоки размером grainSize × grainSize
+                for (let dy = 0; dy < grainSize; dy++) {
+                    for (let dx = 0; dx < grainSize; dx++) {
+                        const pixelIndex = ((y + dy) * w + (x + dx)) * 4;
+                        data[pixelIndex] = data[pixelIndex + 1] = data[pixelIndex + 2] = value;
+                        data[pixelIndex + 3] = 15; // Прозрачность
+                    }
+                }
+            }
+        }
+        ctx.putImageData(imageData, 0, 0);
+    }
+
+    function loop() {
+        generateNoise();
+        requestAnimationFrame(loop);
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+    loop();
+</script>
+
+<style>
+    /* SVG-шум (статичный) */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: white;
+        !important; // Фикс для Firefox
+        filter: url(#noiseFilter);
+        opacity: 0.03;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    /* Canvas-шум (анимированный) */
+    #noiseCanvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 2;
+        opacity: 0.5;
+        /* mix-blend-mode: overlay; */
+    }
+</style>
