@@ -3,14 +3,23 @@
 .header {
   $this: &;
 
-  align-items: center;
-  box-shadow: 0 14px 20px 0 rgba(37, 25, 70, 0.1);
   display: flex;
   left: 0;
-  min-width: 360px;
   position: sticky;
   top: 0;
-  transition: background-color 0.5s ease;
   width: 100%;
   z-index: 10;
+
+  &__logo {
+    display: block;
+    height: 80px;
+    width: 180px;
+
+    &__image {
+      fill: colors.$white;
+      height: 100%;
+      object-fit: contain;
+      width: 100%;
+    }
+  }
 }
