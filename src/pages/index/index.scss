@@ -1,12 +1,6 @@
 @use '~/styles/colors';
 
 .main-page {
-  .header {
-    &._desktop {
-      box-shadow: none;
-    }
-  }
-
   .container {
     height: 100%;
   }
