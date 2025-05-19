@@ -18,25 +18,38 @@
     }
   }
 
+  // .news1 {
+  //   &__wrapper {
+  //     display: flex;
+  //     justify-content: space-between;
+  //   }
+
+  //   &__item {
+  //     max-width: 508px;
+  //     width: 50%;
+
+  //     &__image {
+  //       aspect-ratio: 1/1;
+  //       display: block;
+  //       margin-bottom: 40px;
+  //       object-fit: cover;
+  //       width: 100%;
+  //     }
+
+  //     // &__btn {}
+  //   }
+  // }
+
   .news {
     &__wrapper {
       display: flex;
       justify-content: space-between;
+      padding: 0 133px;
     }
 
-    &__item {
-      max-width: 508px;
+    &__left,
+    &__right {
       width: 50%;
-
-      &__image {
-        aspect-ratio: 1/1;
-        display: block;
-        margin-bottom: 40px;
-        object-fit: cover;
-        width: 100%;
-      }
-
-      // &__btn {}
     }
   }
 

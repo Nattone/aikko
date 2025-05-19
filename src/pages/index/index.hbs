@@ -3,7 +3,7 @@ title=pages.main-page.pageTitle
 class="main-page page"
 }}
 
-{{!-- {{> layout/header}} --}}
+{{> layout/header}}
 
 <main class="main">
 
@@ -11,28 +11,50 @@ class="main-page page"
         <img src="img/content/banner.jpg" alt="" class="banner__image">
     </section>
 
-    <section class="news">
+    {{!-- <section class="news1">
         <div class="container">
-            <h2 class="news__title title_2">INSPACE, Aikko - Перелом</h2>
-            <div class="news__wrapper">
-                <a href="#" class="news__item">
-                    <img src="img/content/test.jpg" alt="" class="news__item__image">
-                    <div class="btn news__item__btn">
+            <h2 class="news1__title title_2">INSPACE, Aikko - Перелом</h2>
+            <div class="news1__wrapper">
+                <a href="#" class="news1__item">
+                    <img src="img/content/test.jpg" alt="" class="news1__item__image">
+                    <div class="btn news1__item__btn">
                         <span class="btn__text">Слушать</span>
                         <svg class="btn__icon icon">
                             <use xlink:href="#icon-arrow"></use>
                         </svg>
                     </div>
                 </a>
-                <a href="#" class="news__item">
-                    <img src="img/content/news__card2.png" alt="" class="news__item__image">
-                    <div class="btn news__item__btn">
+                <a href="#" class="news1__item">
+                    <img src="img/content/news__card2.png" alt="" class="news1__item__image">
+                    <div class="btn news1__item__btn">
                         <span class="btn__text">Смотреть</span>
                         <svg class="btn__icon icon">
                             <use xlink:href="#icon-arrow"></use>
                         </svg>
                     </div>
                 </a>
+            </div>
+        </div>
+    </section> --}}
+
+    <section class="news">
+        <div class="container">
+            <div class="news__wrapper">
+                <div class="news__left">
+                    <img src="img/content/news__card2.png" alt="" class="news__image">
+                </div>
+                <div class="news__right">
+                    <h3 class="news__title title_3">Aikko — первый участник фестиваля разбитых сердец Пульс</h3>
+                    <p class="news__date">25 июля 2025</p>
+                    <p class="news__text">Для всех, кто соскучился по эмоциональному рэпу, кто обожает откровенные тексты, Aikko исполнит свои треки с фирменной резкой и мрачной подачей. Каждая струна души будет затронута 25 июля на фестивале Пульс на МТС Live Лето ⚡</p>
+                    <p class="news__accent">Успей купить билеты по самой низкой цене</p>
+                    <div class="btn news__btn">
+                        <span class="btn__text">Купить</span>
+                        <svg class="btn__icon icon">
+                            <use xlink:href="#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -49,6 +71,13 @@ class="main-page page"
         </div>
     </section>
 
+    <section class="info">
+        <div class="container">
+            <img src="img/content/info.jpg" alt="" class="info__image">
+            <p class="info__running-line">тур /альбомы /анонсы /события в жизни /клипы /фестивали /синглы /творчество /планы на будущее/ концерты/</p>
+        </div>
+    </section>
+
     {{> block-creation/index }}
 
     <section class="gallery">
@@ -57,19 +86,19 @@ class="main-page page"
             <div class="gallery__list">
                 <a href="#" class="gallery__item">
                     <img src="img/content/gallery1.png" alt="" class="gallery__item__image">
-                    <p  class="gallery__item__text">09.10.24 Аврора,<br>Санкт-Петербург</p>
+                    <p class="gallery__item__text">09.10.24 Аврора,<br>Санкт-Петербург</p>
                 </a>
                 <a href="#" class="gallery__item">
                     <img src="img/content/gallery2.png" alt="" class="gallery__item__image">
-                    <p  class="gallery__item__text">09.10.24 Аврора,<br>Санкт-Петербург</p>
+                    <p class="gallery__item__text">09.10.24 Аврора,<br>Санкт-Петербург</p>
                 </a>
                 <a href="#" class="gallery__item">
                     <img src="img/content/gallery3.png" alt="" class="gallery__item__image">
-                    <p  class="gallery__item__text">09.10.24 Аврора,<br>Санкт-Петербург</p>
+                    <p class="gallery__item__text">09.10.24 Аврора,<br>Санкт-Петербург</p>
                 </a>
                 <a href="#" class="gallery__item">
                     <img src="img/content/gallery4.png" alt="" class="gallery__item__image">
-                    <p  class="gallery__item__text">09.10.24 Аврора,<br>Санкт-Петербург</p>
+                    <p class="gallery__item__text">09.10.24 Аврора,<br>Санкт-Петербург</p>
                 </a>
             </div>
         </div>
