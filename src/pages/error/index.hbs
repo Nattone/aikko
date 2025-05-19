@@ -8,16 +8,17 @@ class="error page"
 <main class="main">
     <section class="error__wrapper">
         <div class="container">
-            <h1 class="">404</h1>
-            <div class="glitch-effect">
-            <img src="img/decor/404.svg" alt="" class="">
-
+            <div class="error__title-wrapper">
+                <h1 class="error__title">404</h1>
+                <div class="glitch-effect">
+                    <img src="img/decor/404.svg" alt="">
+                </div>
             </div>
-            <p class="error__text subtitle">кажется, ты потерялся,<br>попробуй начать <a href="#">сначала</a></p>
+            <p class="error__text subtitle">кажется, ты потерялся,<br>попробуй начать <a href="#" class="error__link">сначала</a></p>
         </div>
     </section>
 
 </main>
 
-{{> layout/footer}}
+{{!-- {{> layout/footer}} --}}
 {{/common/body}}
