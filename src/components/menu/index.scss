@@ -3,5 +3,13 @@
 .menu {
   $this: &;
 
+  display: flex;
+
+  &__item {
+    font-size: 38px;
+    font-weight: 100;
+    line-height: 1.3;
+  }
+
   // #{$this} {}
 }
