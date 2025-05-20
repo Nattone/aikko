@@ -14,7 +14,7 @@ html {
   scroll-behavior: smooth;
 
   // scrollbar
-  scrollbar-color: rgba(colors.$purple, 0.4) rgba(colors.$purple, 0.1);
+  scrollbar-color: colors.$accent rgba(colors.$accent, 0.1);
   scrollbar-width: thin;
 
   &::-webkit-scrollbar {
@@ -24,15 +24,15 @@ html {
   }
 
   &::-webkit-scrollbar-track-piece {
-    background-color: rgba(colors.$purple, 0.1);
+    background-color: rgba(colors.$accent, 0.1);
   }
 
   &::-webkit-scrollbar-thumb {
     background-clip: padding-box;
-    background-color: rgba(colors.$purple, 0.4);
+    background-color: colors.$accent;
     border: 0 solid rgba(0, 0, 0, 0);
     /* stylelint-disable-next-line property-no-vendor-prefix */
-    -webkit-border-radius: 5px;
+    -webkit-border-radius: 0;
     box-shadow: none;
     height: 6px;
   }
@@ -44,7 +44,7 @@ html {
   }
 
   &::-webkit-scrollbar-corner {
-    background-color: rgba(colors.$purple, 0.1);
+    background-color: rgba(colors.$accent, 0.1);
   }
 
   // .mobile-menu__items::-webkit-scrollbar-track {
@@ -476,11 +476,11 @@ main {
 //   }
 // }
 
-// .icon {
-//   display: block;
-//   margin: 0 auto;
-//   transition: all 0.3s ease;
-// }
+.icon {
+  display: block;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
 
 // .title {
 //   &_accent {
