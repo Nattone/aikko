@@ -133,6 +133,55 @@
     }
   }
 
+  .info {
+    aspect-ratio: 1728/1100;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: flex-end;
+    max-height: 100vh;
+    min-height: 400px;
+    padding: 0;
+    position: relative;
+    width: 100vw;
+
+    &__image {
+      aspect-ratio: 1728/1100;
+      display: block;
+      height: fit-content;
+      max-height: 100vh;
+      object-fit: cover;
+      position: absolute;
+      width: 100vw;
+    }
+
+    .container {
+      display: flex;
+      height: fit-content;
+      justify-content: flex-end;
+    }
+
+    // &__btn {}
+
+    &__lines {
+      display: flex;
+      margin-bottom: 120px;
+      margin-top: 80px;
+      overflow: hidden;
+      padding: 10px 0;
+      white-space: nowrap;
+      width: 100%;
+
+      &__item {
+        animation: marquee 12s linear infinite;
+        font-size: 48px;
+        font-weight: 100;
+        line-height: 1.2;
+        padding-right: 10px;
+      }
+    }
+  }
+
   .gallery {
     &__list {
       display: flex;
@@ -211,5 +260,15 @@
         z-index: 2;
       }
     }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%); /* Сдвигаем на ширину одного блока */
   }
 }
