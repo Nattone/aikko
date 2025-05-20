@@ -1,98 +1,35 @@
 <footer class="footer">
-    <div class="footer__top">
-        <div class="container">
-            <a class="footer__logo logo" href="all.html">
-                <img src="img/logo_f.svg" alt="" class="footer__logo__image">
-            </a>
-            <ul class="footer__contacts">
-                <li class="footer__contacts__item">
-                    <p class="bodytext_m">
-                        <svg class="icon">
-                            <use xlink:href="#icon-geo"></use>
-                        </svg>
-                        <span>ул.Вокзальная, 21</span>
-                    </p>
-                </li>
-                <li class="footer__contacts__item">
-                    <a href="tel:83912754976" class="footer__contacts__link bodytext_m">
-                        <svg class="icon">
-                            <use xlink:href="#icon-phone"></use>
-                        </svg>
-                        <span>+7 (391) 2754976</span>
-                    </a>
-                </li>
-                <li class="footer__contacts__item">
-                    <a href="mailto:andreeva@krasumka.ru" class="footer__contacts__link bodytext_m">
-                        <svg class="icon">
-                            <use xlink:href="#icon-mail"></use>
-                        </svg>
-                        <span>andreeva@krasumka.ru</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="footer__wrapper">
-                <div class="footer__wrapper__top">
-                    <ul class="footer__menu">
-                        <li class="footer__menu__item">
-                            <a href="#" class="footer__menu__link bodytext_m">Детские центры</a>
-                        </li>
-                        <li class="footer__menu__item">
-                            <a href="#" class="footer__menu__link bodytext_m">Умка школа</a>
-                        </li>
-                        <li class="footer__menu__item">
-                            <a href="#" class="footer__menu__link bodytext_m">О нас</a>
-                        </li>
-                        <li class="footer__menu__item">
-                            <a href="#" class="footer__menu__link bodytext_m">Партнёрам</a>
-                        </li>
-                        <li class="footer__menu__item">
-                            <a href="#" class="footer__menu__link bodytext_m">Проекты</a>
-                        </li>
-                        <li class="footer__menu__item">
-                            <a href="#" class="footer__menu__link bodytext_m">Контакты</a>
-                        </li>
-                    </ul>
-                    <div class="footer__social">
-                        <div class="footer__social__string">
-                            <p class="footer__social__name bodytext_m">Умка</p>
-                            <a href="#" target="_blank" class="footer__social__link">
-                                <svg class="icon">
-                                    <use xlink:href="#icon-tg"></use>
-                                </svg>
-                            </a>
-                            <a href="#" target="_blank" class="footer__social__link">
-                                <svg class="icon">
-                                    <use xlink:href="#icon-vk"></use>
-                                </svg>
-                            </a>
-                        </div>
-
-                        <div class="footer__social__string">
-                            <p class="footer__social__name bodytext_m">Умка Школа</p>
-                            <a href="#" target="_blank" class="footer__social__link">
-                                <svg class="icon">
-                                    <use xlink:href="#icon-tg"></use>
-                                </svg>
-                            </a>
-                            <a href="#" target="_blank" class="footer__social__link">
-                                <svg class="icon">
-                                    <use xlink:href="#icon-vk"></use>
-                                </svg>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="footer__links">
-                    <a href="#" class="footer__links__item bodytext_s">Сведения об образовательной организации</a>
-                    <a href="#" class="footer__links__item bodytext_s">Политика конфиденциальности</a>
-                </div>
+    <div class="footer__top container">
+        <div class="footer__top__left">
+            {{> menu/index }}
+        </div>
+        <div class="footer__top__right">
+            <div class="footer__social">
+                <a href="#" class="footer__social__item">
+                    <svg class="icon">
+                        <use xlink:href="#icon-tg"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer__social__item">
+                    <svg class="icon">
+                        <use xlink:href="#icon-vk"></use>
+                    </svg>
+                </a>
             </div>
+            <p class="footer__copyright">© 2025 aikko. Все права защищены.</p>
         </div>
     </div>
 
 
     <div class="footer__bottom">
-        <div class="container"></div>
+        <a href="/" class="footer__logo">
+            <svg class="footer__bottom__image">
+                <use xlink:href="#footer-img"></use>
+            </svg>
+        </a>
+        {{!-- <img src="img/decor/footer__text_.svg" alt=""> --}}
+        {{!-- <svg class="footer__bottom__image">
+            <use xlink:href="#footer-text"></use>
+        </svg> --}}
     </div>
 </footer>
