@@ -76,6 +76,7 @@ body {
 .page {
   section {
     padding: 96px 0;
+    position: relative;
 
     .title_2 {
       margin-bottom: 80px;
@@ -112,6 +113,7 @@ body {
   font-size: 20px;
   height: 60px;
   justify-content: center;
+  min-width: 375px;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -154,6 +156,7 @@ body {
   &__icon {
     fill: colors.$white;
     height: 10px;
+    margin: 0 !important;
     width: 94px;
   }
 }

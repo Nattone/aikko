@@ -54,6 +54,26 @@
   }
 
   .tickets {
+    position: relative;
+
+    // &::before,
+    // &::after {
+    //   content: '';
+    //   display: block;
+    //   position: absolute;
+    //   background-size: contain;
+    //   background-repeat: no-repeat;
+    // }
+
+    // &::before {
+    //   background-image: url('../img/decor/tickets1.svg');
+    //   width: 1018px;
+    //   height: 826px;
+    //   top: 40px;
+    //   right: -46px;
+    //   animation: vector-1 7s infinite linear;
+    // }
+
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -88,6 +108,11 @@
         text-transform: uppercase;
       }
 
+      &__price,
+      &__date {
+        width: 100px;
+      }
+
       &__vk {
         display: block;
         flex-shrink: 0;
@@ -111,7 +136,7 @@
 
       &__wrapper {
         display: flex;
-        gap: 32px;
+        gap: 60px;
         margin-bottom: 24px;
       }
 
@@ -263,6 +288,7 @@
   }
 }
 
+// бегущая строка
 @keyframes marquee {
   0% {
     transform: translateX(0);

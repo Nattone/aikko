@@ -46,7 +46,9 @@ class="main-page page"
                 <div class="news__right">
                     <h3 class="news__title title_3">Aikko — первый участник фестиваля разбитых сердец Пульс</h3>
                     <p class="news__date">25 июля 2025</p>
-                    <p class="news__text">Для всех, кто соскучился по эмоциональному рэпу, кто обожает откровенные тексты, Aikko исполнит свои треки с фирменной резкой и мрачной подачей. Каждая струна души будет затронута 25 июля на фестивале Пульс на МТС Live Лето ⚡</p>
+                    <p class="news__text">Для всех, кто соскучился по эмоциональному рэпу, кто обожает откровенные
+                        тексты, Aikko исполнит свои треки с фирменной резкой и мрачной подачей. Каждая струна души будет
+                        затронута 25 июля на фестивале Пульс на МТС Live Лето ⚡</p>
                     <p class="news__accent">Успей купить билеты по самой низкой цене</p>
                     <div class="btn news__btn">
                         <span class="btn__text">Купить</span>
@@ -60,6 +62,7 @@ class="main-page page"
     </section>
 
     <section class="tickets">
+        {{> decor/tickets }}
         <div class="container">
             <h2 class="tickets__title title_2">Тур 2025</h2>
             <div class="tickets__list">
@@ -74,12 +77,20 @@ class="main-page page"
     <section class="info">
         <img src="img/content/info.jpg" alt="" class="info__image">
         <div class="container">
-            <a href="#" class="info__btn btn">Смотреть</a>
+            <a href="#" class="btn">
+                <span class="btn__text">Смотреть</span>
+                <svg class="btn__icon icon">
+                    <use xlink:href="#icon-arrow"></use>
+                </svg>
+            </a>
         </div>
         <div class="info__lines">
-            <p class="info__lines__item">тур /альбомы /анонсы /события в жизни /клипы /фестивали /синглы /творчество /планы на будущее/ концерты/</p>
-            <p class="info__lines__item">тур /альбомы /анонсы /события в жизни /клипы /фестивали /синглы /творчество /планы на будущее/ концерты/</p>
-            <p class="info__lines__item">тур /альбомы /анонсы /события в жизни /клипы /фестивали /синглы /творчество /планы на будущее/ концерты/</p>
+            <p class="info__lines__item">тур /альбомы /анонсы /события в жизни /клипы /фестивали /синглы /творчество
+                /планы на будущее/ концерты/</p>
+            <p class="info__lines__item">тур /альбомы /анонсы /события в жизни /клипы /фестивали /синглы /творчество
+                /планы на будущее/ концерты/</p>
+            <p class="info__lines__item">тур /альбомы /анонсы /события в жизни /клипы /фестивали /синглы /творчество
+                /планы на будущее/ концерты/</p>
         </div>
     </section>
 
