@@ -20,6 +20,7 @@
       position: absolute;
       top: 50%;
       width: 100%;
+      z-index: 3;
     }
 
     &__image {
@@ -40,14 +41,11 @@
 
     &__glitch {
       align-items: center;
-      display: flex;
-      flex-direction: column;
-      height: 421px;
       left: 50%;
       position: absolute;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: 1690px;
+      width: 100%;
 
       &__top,
       &__middle,
@@ -57,14 +55,14 @@
       }
 
       &__top {
-        animation: banner-glitch-1 10s infinite linear;
+        animation: glitch-1 3s infinite step-end, glitch-opacity-2 6s infinite step-end;
         height: 224px;
         left: 77px;
         width: 1612px;
       }
 
       &__middle {
-        animation: banner-glitch-2 10s infinite linear;
+        animation: glitch-2 5s infinite step-end, glitch-opacity-2 7s infinite step-end;
         height: 195px;
         left: 25px;
         top: 162px;
@@ -72,11 +70,28 @@
       }
 
       &__bottom {
-        animation: banner-glitch-1 10s infinite linear;
+        animation: glitch-1 3s infinite step-end reverse, glitch-opacity-2 5s infinite step-end;
         height: 130px;
         left: 0;
         top: 291px;
         width: 1673px;
+      }
+
+      &__svg {
+        height: 100%;
+        width: 100%;
+
+        &_top {
+          animation: glitch-1 3s infinite step-end, glitch-opacity-2 6s infinite step-end;
+        }
+
+        &_middle {
+          animation: glitch-2 5s infinite step-end, glitch-opacity-2 7s infinite step-end;
+        }
+
+        &_bottom {
+          animation: glitch-1 3s infinite step-end reverse, glitch-opacity-2 5s infinite step-end;
+        }
       }
     }
   }
@@ -502,5 +517,76 @@
 
   100% {
     transform: translateX(-100%); /* Сдвигаем на ширину одного блока */
+  }
+}
+
+@keyframes glitch-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-5px, 0);
+  }
+
+  51% {
+    transform: translate(10px, 0);
+  }
+
+  52% {
+    transform: translate(10px, 3px);
+  }
+
+  53% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes glitch-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(5px, 0);
+  }
+
+  51% {
+    transform: translate(-5px, 1);
+  }
+
+  53% {
+    transform: translate(0, 0);
+  }
+
+  58% {
+    opacity: 0;
+  }
+
+  59% {
+    opacity: 1;
+  }
+}
+
+@keyframes glitch-opacity-2 {
+  0% {
+    filter: none;
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0.7;
+  }
+
+  61% {
+    opacity: 0.9;
+  }
+
+  68% {
+    opacity: 0.8;
+  }
+
+  69% {
+    opacity: 1;
   }
 }
