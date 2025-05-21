@@ -17,6 +17,11 @@
       border: 1px solid colors.$white;
       border-radius: 10px;
       display: flex;
+      transition: all 0.3s ease;
+
+      &:hover {
+        border-color: colors.$accent;
+      }
     }
 
     &__icon {
@@ -51,6 +56,12 @@
   &__music {
     width: 75%;
 
+    &__mts {
+      .icon {
+        border-radius: 6px;
+      }
+    }
+
     &__item {
       fill: colors.$white;
       max-width: calc(33.3% - 16px);
@@ -58,14 +69,11 @@
       width: 100%;
     }
 
-    &__yandex {
-      &:hover {
-        fill: #ffbc0d;
-      }
-    }
-
     &__icon {
-      border-radius: 10px;
+      fill: colors.$white;
+      margin-left: 0;
+
+      // border-radius: 10px;
       margin-right: 16px;
       overflow: hidden;
     }
