@@ -27,6 +27,7 @@
       display: block;
       height: 100%;
       object-fit: cover;
+      object-position: top;
       width: 100%;
 
       &_front {
@@ -40,42 +41,8 @@
     }
 
     &__glitch {
-      align-items: center;
-      left: 50%;
+      inset: 0;
       position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-
-      &__top,
-      &__middle,
-      &__bottom {
-        display: block;
-        position: absolute;
-      }
-
-      &__top {
-        animation: glitch-1 3s infinite step-end, glitch-opacity-2 6s infinite step-end;
-        height: 224px;
-        left: 77px;
-        width: 1612px;
-      }
-
-      &__middle {
-        animation: glitch-2 5s infinite step-end, glitch-opacity-2 7s infinite step-end;
-        height: 195px;
-        left: 25px;
-        top: 162px;
-        width: 1663px;
-      }
-
-      &__bottom {
-        animation: glitch-1 3s infinite step-end reverse, glitch-opacity-2 5s infinite step-end;
-        height: 130px;
-        left: 0;
-        top: 291px;
-        width: 1673px;
-      }
 
       &__svg {
         height: 100%;
@@ -366,149 +333,6 @@
   }
 }
 
-// banner glitch
-@keyframes banner-glitch-1 {
-  /* Пауза 1 секунда (0%-10%) */
-  0%,
-  10% {
-    transform: translateX(0);
-  }
-
-  11% {
-    transform: translateX(-10px);
-  }
-
-  12% {
-    transform: translateX(10px);
-  }
-
-  13%,
-  29% {
-    transform: translateX(0);
-  }
-
-  30% {
-    transform: translateX(30px);
-  }
-
-  31% {
-    transform: translateX(-30px);
-  }
-
-  32% {
-    transform: translateX(100px);
-  }
-
-  33% {
-    transform: translateX(10px);
-  }
-
-  34%,
-  43% {
-    transform: translateX(0);
-  }
-
-  44% {
-    transform: translateX(10px);
-  }
-
-  45%,
-  57% {
-    transform: translateX(0);
-  }
-
-  58% {
-    transform: translateX(-70px);
-  }
-
-  59% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes banner-glitch-2 {
-  /* Пауза 1 секунда (0%-10%) */
-  0%,
-  20% {
-    transform: translateX(0);
-  }
-
-  21% {
-    transform: translateX(-50px);
-  }
-
-  22% {
-    transform: translateX(-10px);
-  }
-
-  23% {
-    transform: translateX(70px);
-  }
-
-  24%,
-  29% {
-    transform: translateX(0);
-  }
-
-  30% {
-    transform: translateX(10px);
-  }
-
-  31% {
-    transform: translateX(0);
-  }
-
-  32% {
-    transform: translateX(10px);
-  }
-
-  33% {
-    transform: translateX(-70px);
-  }
-
-  34%,
-  62% {
-    transform: translateX(0);
-  }
-
-  63% {
-    transform: translateX(40px);
-  }
-
-  64%,
-  77% {
-    transform: translateX(0);
-  }
-
-  78% {
-    transform: translateX(110px);
-  }
-
-  79% {
-    transform: translateX(-70);
-  }
-
-  80% {
-    transform: translateX(90);
-  }
-
-  81% {
-    transform: translateX(70);
-  }
-
-  82% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
 // бегущая строка
 @keyframes marquee {
   0% {
@@ -558,19 +382,10 @@
   53% {
     transform: translate(0, 0);
   }
-
-  58% {
-    opacity: 0;
-  }
-
-  59% {
-    opacity: 1;
-  }
 }
 
 @keyframes glitch-opacity-2 {
   0% {
-    filter: none;
     opacity: 1;
   }
 
