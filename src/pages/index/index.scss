@@ -11,6 +11,17 @@
     position: relative;
     width: 100%;
 
+    &::before {
+      background: linear-gradient(180deg, rgba(colors.$black, 0%), colors.$black 100%);
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+    }
+
     &__image {
       display: block;
       height: 100%;
