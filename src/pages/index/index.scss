@@ -94,6 +94,13 @@
       width: 50%;
     }
 
+    &__left {
+      height: fit-content;
+      padding-right: 150px;
+      position: sticky;
+      top: 98px;
+    }
+
     &__right {
       padding-bottom: 100px;
       position: relative;
