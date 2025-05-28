@@ -63,6 +63,8 @@
   }
 
   &__bottom {
+    position: relative;
+
     &__logo,
     &__image {
       aspect-ratio: 1728/760;
@@ -71,16 +73,15 @@
       width: 100vw;
     }
 
-    // &__text {
-    //   color: transparent;
-    //   font-size: 532px;
-    //   font-weight: 700;
-    //   height: auto;
-    //   line-height: 1;
-    //   margin: 0 0 20px;
-    //   -webkit-text-stroke: 1px colors.$white;
-    //   width: 1000px;
-    //   text-transform: uppercase;
-    // }
+    &__text {
+      aspect-ratio: 1728/396;
+      bottom: 30px;
+      fill: transparent;
+      height: auto;
+      left: 0;
+      position: absolute;
+      stroke: colors.$white;
+      width: 100vw;
+    }
   }
 }
