@@ -388,12 +388,14 @@
 
     &__list {
       display: flex;
+      margin: -50px 0;
       overflow-x: auto;
-      overflow-y: visible;
+      padding: 50px 0;
     }
 
     &__item {
       display: block;
+      line-height: 0;
       margin: 0 24px;
       overflow: visible;
       position: relative;
@@ -401,6 +403,7 @@
 
       &:hover {
         transform: scale(1.2);
+        z-index: 1;
 
         &::before {
           opacity: 0;
