@@ -76,11 +76,10 @@
     &__text {
       aspect-ratio: 1728/396;
       bottom: 30px;
-      fill: transparent;
+      fill: colors.$white;
       height: auto;
       left: 0;
       position: absolute;
-      stroke: colors.$white;
       width: 100vw;
     }
   }
