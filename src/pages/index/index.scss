@@ -93,6 +93,51 @@
     &__right {
       width: 50%;
     }
+
+    &__right {
+      padding-bottom: 100px;
+      position: relative;
+    }
+
+    &__image {
+      aspect-ratio: 1/1;
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__date {
+      color: colors.$accent;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 32px;
+    }
+
+    &__text {
+      margin-bottom: 24px;
+    }
+
+    &__text,
+    &__accent {
+      color: colors.$white;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    &__accent {
+      font-weight: 600;
+    }
+
+    &__btn {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+    }
   }
 
   .tickets {
