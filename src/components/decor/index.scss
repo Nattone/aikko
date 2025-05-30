@@ -57,7 +57,7 @@
         }
 
         &__2 {
-          height: 80px;
+          height: 180px;
           left: 60%;
           top: 50%;
           width: 190px;
@@ -65,7 +65,7 @@
 
         &__3 {
           height: 380px;
-          left: 20%;
+          left: 40%;
           top: 70%;
           width: 300px;
         }
@@ -79,7 +79,7 @@
 
         &__1 {
           height: 400px;
-          left: 25%;
+          left: -10%;
           top: 0;
           width: 400px;
         }
@@ -87,7 +87,7 @@
         &__2 {
           background-color: colors.$dark-bg;
           height: 600px;
-          left: 60%;
+          left: 40%;
           top: 0;
           width: 190px;
         }
@@ -95,7 +95,7 @@
         &__3 {
           filter: blur(150px);
           height: 400px;
-          left: 60%;
+          left: 45%;
           top: 60%;
           width: 600px;
         }
@@ -151,7 +151,7 @@
           background-color: colors.$black;
           height: 600px;
           left: 50%;
-          top: 30%;
+          top: 40%;
           width: 400px;
         }
 
@@ -159,7 +159,7 @@
           background-color: #cb0a17;
           filter: blur(100px);
           height: 200px;
-          right: 20%;
+          right: 10%;
           top: 10%;
           width: 400px;
         }
@@ -167,7 +167,7 @@
         &__3 {
           bottom: 0;
           height: 500px;
-          left: 20%;
+          left: 5%;
           width: 600px;
         }
       }
