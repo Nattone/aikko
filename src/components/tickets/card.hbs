@@ -1,4 +1,4 @@
-<div class="tickets__item">
+<div class="tickets__item {{ticketsItemClass}}">
     <div class="tickets__item__head">
         <p class="tickets__item__city">Петропавловск Камчатский</p>
         <a href="#" class="tickets__item__vk">
@@ -27,6 +27,13 @@
                 <p class="tickets__item__title">Место</p>
                 <p class="tickets__item__value">Эрмитаж</p>
             </div>
+            {{#if soldout}}
+            <svg class="tickets__item__soldout icon">
+                <use xlink:href="#soldout"></use>
+            </svg>
+            {{/if}}
+
+
         </div>
     </div>
     <a href="#" class="btn">

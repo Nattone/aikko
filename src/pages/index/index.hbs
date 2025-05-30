@@ -168,7 +168,7 @@ class="main-page page"
             <h2 class="tickets__title title_2">Тур 2025</h2>
             <div class="tickets__list">
                 {{> tickets/card }}
-                {{> tickets/card }}
+                {{> tickets/card ticketsItemClass="tickets__item_soldout" soldout=true }}
                 {{> tickets/card }}
                 {{> tickets/card }}
             </div>
@@ -300,6 +300,7 @@ class="main-page page"
 
     </section>
 
+    {{> block-merch/index }}
 
 </main>
 
