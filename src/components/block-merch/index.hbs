@@ -1,0 +1,18 @@
+<section class="merch">
+    <div class="container">
+        <h2 class="merch__title title_2">Мерч</h2>
+        <div class="merch__list">
+            {{> block-merch/card }}
+            {{> block-merch/card merchItemClass="merch__item_small" }}
+            <div class="merch__list__right">
+                {{> block-merch/card merchItemClass="merch__item_small" }}
+                <a href="#" class="btn merch__btn">
+                    <span class="btn__text">Смотреть все</span>
+                    <svg class="btn__icon icon">
+                        <use xlink:href="#icon-arrow"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

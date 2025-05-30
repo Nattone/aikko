@@ -1,0 +1,82 @@
+@use '~/styles/colors';
+
+.merch {
+  //   &__wrapper {
+  //     position: relative;
+  //     padding: 0 133px;
+  //   }
+
+  &__list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: calc(25% - 18px);
+
+      .merch__item_small {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__item {
+    background: rgba(colors.$black, 0.2);
+    border: 1px solid colors.$white;
+    border-radius: 10px;
+    max-width: calc(33.3% - 18px);
+    overflow: hidden;
+
+    &_small {
+      border-radius: 8px;
+      height: fit-content;
+      max-width: calc(25% - 18px);
+
+      .merch__item__text {
+        padding: 20px 20px 32px;
+      }
+
+      .merch__item__price {
+        font-size: 20px;
+        margin-bottom: 24px;
+      }
+
+      .merch__item__title {
+        font-size: 20px;
+      }
+    }
+
+    &__image {
+      aspect-ratio: 1/1;
+      display: block;
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    &__text {
+      padding: 24px 24px 36px;
+      text-align: center;
+    }
+
+    &__price {
+      color: colors.$dark-grey;
+      font-size: 28px;
+      margin-bottom: 28px;
+    }
+
+    &__title {
+      color: colors.$white;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+  }
+
+  &__btn {
+    max-width: 100%;
+    min-width: 200px;
+  }
+}
