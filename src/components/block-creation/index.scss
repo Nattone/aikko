@@ -1,6 +1,17 @@
 @use '~/styles/colors';
 
 .creation {
+  &__header {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    margin-bottom: 0 !important;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
