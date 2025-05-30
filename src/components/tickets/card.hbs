@@ -1,6 +1,6 @@
-<div class="tickets__item {{ticketsItemClass}}">
+<div class="tickets__item{{#if this.isSoldout}} tickets__item_soldout{{/if}}">
     <div class="tickets__item__head">
-        <p class="tickets__item__city">Петропавловск Камчатский</p>
+        <p class="tickets__item__city">{{this.city}}</p>
         <a href="#" class="tickets__item__vk">
             <svg class="icon icon_vk">
                 <use xlink:href="#icon-vk"></use>
@@ -11,23 +11,23 @@
         <div class="tickets__item__wrapper">
             <div class="tickets__item__price">
                 <p class="tickets__item__title">Стоимость</p>
-                <p class="tickets__item__value">2000 ₽</p>
+                <p class="tickets__item__value">{{this.price}} ₽</p>
             </div>
             <div class="tickets__item__guests">
                 <p class="tickets__item__title">Приглашенные исполнители</p>
-                <p class="tickets__item__value">Inspace, Playingtheangel</p>
+                <p class="tickets__item__value">{{this.guests}}</p>
             </div>
         </div>
         <div class="tickets__item__wrapper">
             <div class="tickets__item__date">
                 <p class="tickets__item__title">Дата</p>
-                <p class="tickets__item__value">19.05.2025</p>
+                <p class="tickets__item__value">{{this.date}}</p>
             </div>
             <div class="tickets__item__place">
                 <p class="tickets__item__title">Место</p>
-                <p class="tickets__item__value">Эрмитаж</p>
+                <p class="tickets__item__value">{{this.place}}</p>
             </div>
-            {{#if soldout}}
+            {{#if this.isSoldout}}
             <svg class="tickets__item__soldout icon">
                 <use xlink:href="#soldout"></use>
             </svg>

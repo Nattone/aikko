@@ -4,7 +4,103 @@
   },
   "pages": {
     "main-page": {
-      "pageTitle": "Aikko"
+      "pageTitle": "Aikko",
+      "ticketsItems": [
+        {
+          "city": "Петропавловск Камчатский",
+          "price": "от 2 000",
+          "guests": "not announced",
+          "date": "01.04.2025",
+          "place": "coming soon"
+        },
+        {
+          "city": "Воронеж",
+          "price": "2 000",
+          "guests": "not announced",
+          "date": "26.04.2025",
+          "place": "coming soon",
+          "isSoldout": true
+        },
+        {
+          "city": "Ростов-на-Дону",
+          "price": "2 000",
+          "guests": "not announced",
+          "date": "27.04.2025",
+          "place": "coming soon"
+        },
+        {
+          "city": "Краснодар",
+          "price": "2 000",
+          "guests": "not announced",
+          "date": "28.04.2025",
+          "place": "coming soon"
+        },
+        {
+          "city": "Санкт-Петербург",
+          "price": "2 000",
+          "guests": "not announced",
+          "date": "11.05.2025",
+          "place": "Factory"
+        },
+        {
+          "city": "Нижний Новгород",
+          "price": "2 000",
+          "guests": "not announced",
+          "date": "12.05.2025",
+          "place": "coming soon",
+          "isSoldout": true
+        },
+        {
+          "city": "Москва",
+          "price": "2 000",
+          "guests": "not announced",
+          "date": "17.05.2025",
+          "place": "Урбан",
+          "isSoldout": true
+        },
+        {
+          "city": "Тюмень",
+          "price": "2 000",
+          "guests": "not announced",
+          "date": "18.05.2025",
+          "place": "coming soon"
+        },
+        {
+          "city": "Новосибирск",
+          "price": "2 000",
+          "guests": "not announced",
+          "date": "19.05.2025",
+          "place": "Подземка"
+        },
+        {
+          "city": "Красноярск",
+          "price": "2 000",
+          "guests": "Inspace, Playingtheangel",
+          "date": "24.05.2025",
+          "place": "Эрмитаж"
+        },
+        {
+          "city": "Екатеринбург",
+          "price": "2 000",
+          "guests": "not announced",
+          "date": "25.05.2025",
+          "place": "coming soon"
+        },
+        {
+          "city": "Казань",
+          "price": "2 000",
+          "guests": "not announced",
+          "date": "26.05.2025",
+          "place": "coming soon"
+        },
+        {
+          "city": "Самара",
+          "price": "2 000",
+          "guests": "not announced",
+          "date": "27.05.2025",
+          "place": "coming soon"
+        }
+      ]
     }
   }
 }

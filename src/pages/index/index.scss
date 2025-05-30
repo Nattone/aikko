@@ -150,24 +150,6 @@
   .tickets {
     position: relative;
 
-    // &::before,
-    // &::after {
-    //   content: '';
-    //   display: block;
-    //   position: absolute;
-    //   background-size: contain;
-    //   background-repeat: no-repeat;
-    // }
-
-    // &::before {
-    //   background-image: url('../img/decor/tickets1.svg');
-    //   width: 1018px;
-    //   height: 826px;
-    //   top: 40px;
-    //   right: -46px;
-    //   animation: vector-1 7s infinite linear;
-    // }
-
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -185,9 +167,11 @@
       overflow: hidden;
       padding: 28px;
       position: relative;
+      width: 100%;
 
       &__head {
         display: flex;
+        justify-content: space-between;
         margin-bottom: 24px;
       }
 
