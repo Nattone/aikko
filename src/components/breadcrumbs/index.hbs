@@ -1,0 +1,19 @@
+<div class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__list">
+            {{#each items as |item|}}
+                {{#if item.link}}
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__item__link" href="{{item.link}}" title="главная" itemprop="item">
+                            <span>{{item.title}}</span>
+                        </a>
+                    </li>
+                    {{else}}
+                    <li class="breadcrumbs__item">
+                        <span>{{item.title}}</span>
+                    </li>
+                {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+</div>
