@@ -46,6 +46,7 @@
       position: absolute;
 
       &__svg {
+        fill: colors.$white;
         height: 100%;
         width: 100%;
 
@@ -117,7 +118,7 @@
     }
 
     &__date {
-      color: colors.$accent;
+      color: colors.$dark-accent;
       font-size: 24px;
       font-weight: 600;
       line-height: 1.2;
@@ -262,7 +263,7 @@
         }
 
         .tickets__item__soldout {
-          fill: colors.$accent;
+          fill: colors.$dark-accent;
           height: 100%;
           left: 50%;
           position: absolute;
