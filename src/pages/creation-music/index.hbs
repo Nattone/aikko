@@ -1,0 +1,44 @@
+{{#> common/body
+title=pages.creation-music.pageTitle
+class="creation-page creation-page_music page"
+}}
+
+{{> layout/header}}
+<main class="main">
+    {{> breadcrumbs/index items=pages.creation-music.breadcrumbs}}
+    <section class="creation-page__wrapper">
+        <div class="container">
+            <div class="creation-page__switcher">
+                <a href="#" class="creation-page__switcher__item _active">Альбомы</a>
+                <a href="#" class="creation-page__switcher__item">Клипы</a>
+            </div>
+            <h2 class="creation-page__title title_2">Альбомы</h2>
+            <div class="creation-page__list">
+                
+                {{#each pages.creation-music.musicItems}}
+                    <a href="{{this.link}}" class="creation-page__item">
+                        <div class="creation-page__item__image-wrapper">
+                            <img class="creation-page__item__image" src="{{this.image}}"/>
+                        </div>
+                        <div class="creation-page__item__text">
+                            <p class="creation-page__item__text__stroke creation-page__item__text__title">{{this.title}}</p>
+                            <p class="creation-page__item__text__stroke creation-page__item__text__authors">{{this.authors}}</p>
+                            <p class="creation-page__item__text__stroke">
+                                <span class="creation-page__item__text__year">{{this.year}}</span>
+                                <span>/</span>
+                                <span class="creation-page__item__text__type">{{this.type}}</span>
+                            </p>
+                        </div>
+                    </a>
+                {{/each}}
+
+            </div>
+
+        </div>
+    </section>
+
+    {{> block-creation/index }}
+</main>
+
+{{> layout/footer}}
+{{/common/body}}

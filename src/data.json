@@ -101,6 +101,36 @@
           "place": "coming soon"
         }
       ]
+    },
+    "creation-music": {
+      "breadcrumbs": [
+        {
+          "title": "главная",
+          "link": "index.html",
+          "meta": 0
+        },
+        {
+          "title": "творчество - альбомы"
+        }
+      ],
+       "musicItems": [
+        {
+          "link": "#",
+          "image": "img/content/album_001.jpeg",
+          "title": "Мне снилось как ты умрёшь",
+          "authors": "aikko",
+          "year": "2025",
+          "type": "Сингл"
+        },
+        {
+          "link": "#",
+          "image": "img/content/album_002.jpeg",
+          "title": "Задыхаюсь",
+          "authors": "Роки & aikko",
+          "year": "2025",
+          "type": "Сингл"
+        }
+       ]
     }
   }
 }
